@@ -38,14 +38,20 @@ function getRandomQuote (quotes){
 
 /***
  * `printQuote` function
- * 
+ * https://stackoverflow.com/questions/28418119/passing-a-javascript-string-to-a-div-id-div1-tag
 ***/
-console.log (getRandomQuote(quotes));
+//console.log (getRandomQuote(quotes));
+/**<p class="quote">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>
+        <p class="source">Patrick McKenzie<span class="citation">Twitter</span><span class="year">2016</span></p> */
+       let html = `<p class="quote">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>
+       <p class="source">P. McKenzie<span class="citation">Twitter</span><span class="year">2016</span></p>`;
+       document.getElementById("quote-box").innerHTML = `${html}`;
+       //let test = document.getElementById(load-quote);
+       console.log ('test');
 
-
-/***
+/***s
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-//document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", printQuote, false);
