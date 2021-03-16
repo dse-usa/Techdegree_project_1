@@ -1,11 +1,13 @@
- Project Title
+Treehouse FSJS Techdegree:
+project 1 - A Random Quote Generator
+By David Evans 3/15/2021
 
-A nice project with a nice description
+This project is the first assignment in the Treehoues FSJS Techdegree. The goal is to javaScript code to randomly get a quote and its properties from an array of quotes and display the information in index.html. The CSS files and index.html where provided by Treehouse as was the JavaScript code for the listener for the "Show another quote button".  
 
 ---
 ## Requirements
-
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+My biggest challenge as a new developer was understanding that in the course workspace Treehouse is providing the webserver. On my laptop I did not have a webserver so I kept getting a "document not defined error" in the console when trying to execute the code (document.getElementById("quote-box").innerHTML = `${html}`;) to insert the JavaScript string into the Index.html file. After a week or so I reached out to the Slack community and @Dodders responded with "The document object is how you interact with the HTML that is loaded in the browser. It sounds like you have no browser open and are trying to run your app only in the terminal?
+I suggest you add this plugin to vs code: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer".   I used YouTube to get a starter on the extension and it work like a charm. 
 
 ### Node
 - #### Node installation on Windows
@@ -13,54 +15,15 @@ For development, you will only need Node.js and a node global package, Yarn, ins
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
 Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-- #### Node installation on Ubuntu
-
-  You can install nodejs and npm easily with apt install, just run the following commands.
-
-      $ sudo apt install nodejs
-      $ sudo apt install npm
-
-- #### Other Operating Systems
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
-
-If the installation was successful, you should be able to run the following command.
-
-    $ node --version
-    v8.11.3
-
-    $ npm --version
-    6.1.0
-
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
-
-    $ npm install npm -g
-
-###
-### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
+    $node --version
+    v14.16.0
 
 ---
 
-## Install
-
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
-    $ yarn install
-
-## Configure app
-
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
-
-- A setting;
-- Another setting;
-- One more setting;
 
 ## Running the project
 
-    $ yarn start
+    Right-click index.html and select Open in Live Server
 
-## Simple build for production
 
-    $ yarn build
+
