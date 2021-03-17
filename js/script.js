@@ -1,7 +1,7 @@
 /******************************************
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
-By David Evans 3/15/2021
+By David Evans 3/17/2021
 ******************************************/
 
 
