@@ -2,7 +2,7 @@
 ## Project 1 - A Random Quote Generator
 By David Evans 3/17/2021
 
-This project is the first assignment in the Treehouse FSJS Techdegree. The goal is to javaScript code to randomly get a quote and its properties from an array of quotes and display the information in index.html. The CSS files and index.html where provided by Treehouse as was the JavaScript code for the listener for the "Show another quote button".  The first step was to create an array of objects with four properties quote, source, citation, and year. The next step was to create a function to return a random quote object. The last step was to call the function and concatenate and HTML string checking for empty citation and year properties.    
+This project is the first assignment in the Treehouse FSJS Techdegree. The goal is to JavaScript code to randomly get a quote and its properties from an array of quotes and display the information in index.html. The CSS files and index.html where provided by Treehouse as was the JavaScript code for the listener for the "Show another quote button".  The first step was to create an array of objects with four properties quote, source, citation, and year. The next step was to create a function to return a random quote object. The last step was to call the function and concatenate and HTML string checking for empty citation and year properties.    
 
 ---
 ## Requirements
@@ -23,6 +23,8 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 ## Running the project
 
+    Open index.html in a browser
+                or
     Right-click index.html and select Open in Live Server
 
 
