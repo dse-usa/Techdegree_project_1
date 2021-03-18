@@ -11,12 +11,12 @@ By David Evans 3/17/2021
     */
 let quotes = [
 
-  {quote:'Ask not what your country can do for you—ask what you can do for your country.', source:'John F Kennedy', citation:'Inaugural address', year:'1961'},
-  {quote:'I have a dream...', source:'Martin Luther King, Jr.', citation:'March on Washington speech', year:'1963'},
-  {quote:"Th-th-th-that's all folks!", source:'Porky the Pig', citation:'Loony Tunes', year:'1935'},
-  {quote:'To infinity and beyond!', source:'Buzz Lightyear', citation:'Toy Store',year:'1995'},
-  {quote:"It’s like déjà vu all over again!", source:'Yogi Berra',citation:'',year:''}, 
-  {quote:"Life is like riding a bicycle. To keep your balance you must keep moving.", source:"Albert Einstein",citation:"", year:""}
+  {quote:'Ask not what your country can do for you—ask what you can do for your country.', source:'John F Kennedy', citation:'Inaugural address', year:'1961', sourceType:'Leader'},
+  {quote:'I have a dream...', source:'Martin Luther King, Jr.', citation:'March on Washington speech', year:'1963', sourceType:'Leader'},
+  {quote:"Th-th-th-that's all folks!", source:'Porky the Pig', citation:'Loony Tunes', year:'1935', sourceType:'Animation'},
+  {quote:'To infinity and beyond!', source:'Buzz Lightyear', citation:'Toy Store',year:'1995', sourceType:'Animation'},
+  {quote:"It’s like déjà vu all over again!", source:'Yogi Berra', citation: '' , year:'',sourceType:'Linguist'}, 
+  {quote:"Life is like riding a bicycle. To keep your balance you must keep moving.", source:"Albert Einstein", citation: '', year:'', sourceType:'Human'}
   
   ]
  
@@ -62,6 +62,6 @@ function printQuote (){
       document.getElementById("quote-box").innerHTML = `${html}`;
        
       }
-       
+      setInterval(printQuote,30000);
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
