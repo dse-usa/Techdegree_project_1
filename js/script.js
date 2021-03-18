@@ -15,8 +15,8 @@ let quotes = [
   {quote:'I have a dream...', source:'Martin Luther King, Jr.', citation:'March on Washington speech', year:'1963', sourceType:'Leader'},
   {quote:"Th-th-th-that's all folks!", source:'Porky the Pig', citation:'Loony Tunes', year:'1935', sourceType:'Animation'},
   {quote:'To infinity and beyond!', source:'Buzz Lightyear', citation:'Toy Store',year:'1995', sourceType:'Animation'},
-  {quote:"It’s like déjà vu all over again!", source:'Yogi Berra', citation: '' , year:'',sourceType:'Linguist'}, 
-  {quote:"Life is like riding a bicycle. To keep your balance you must keep moving.", source:"Albert Einstein", citation: '', year:'', sourceType:'Human'}
+  {quote:"It’s like déjà vu all over again!", source:'Yogi Berra',sourceType:'Linguist'}, 
+  {quote:"Life is like riding a bicycle. To keep your balance you must keep moving.", source:"Albert Einstein", sourceType:'Human'}
   
   ]
  
