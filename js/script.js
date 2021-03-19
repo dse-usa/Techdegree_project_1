@@ -40,7 +40,7 @@ function getRandomQuote (array){
   Call getRandomQuote function passing quotes array - defined above.
   @ html = html formatted string variable
   Concatenate quote and source properties
-  Check citation and year properties for no data and concatenate only if there is data.
+  Checks all other properties for no data and concatenates only if there is data.
   Insert string in index.html @ "quote-box". 
   @ Armen Nersisyan for method to check if an objet is empty. https://stackoverflow.com/questions/28552589/in-javascript-how-to-determine-if-an-object-property-exists-and-is-not-empty 
   @ Mozilla for refresher on addition assignment. //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment
@@ -62,6 +62,7 @@ function printQuote (){
       document.getElementById("quote-box").innerHTML = `${html}`;
        
       }
-      setInterval(printQuote,30000);
-
+      
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+setInterval(printQuote,30000);
