@@ -29,8 +29,8 @@ let quotes = [
     
   Credit to the below site and of course Treehouse Loops course.   
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
- */
-  ;
+  */
+
 let quoteTracker = [];
 function getRandomQuote (array){
   let randomQuoteNumber =  Math.floor(Math.random() * array.length);
@@ -38,18 +38,17 @@ function getRandomQuote (array){
     randomQuoteNumber =  Math.floor(Math.random() * array.length)
   } while (quoteTracker.includes(randomQuoteNumber));
    quoteTracker.push(randomQuoteNumber); 
-   
+   console.log(randomQuoteNumber,quoteTracker);
   if (quoteTracker.length === quotes.length){
-    console.log(quoteTracker.length,quotes.length);
-   quoteTracker = [];
+    quoteTracker = [];
     }
 
   return quotes [randomQuoteNumber];
   }
 
-  /*  
+/*  
 Function to create random RGB string. 
-*/
+  */
 
 function randomColor (){
  let r = Math.floor(Math.random() * 255);
@@ -68,7 +67,7 @@ function randomColor (){
   @ Armen Nersisyan for method to check if an objet is empty. https://stackoverflow.com/questions/28552589/in-javascript-how-to-determine-if-an-object-property-exists-and-is-not-empty 
   @ Mozilla for refresher on addition assignment. //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment
   @ w3schools.com for set background color for a document https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp
-  */
+    */
   
 function printQuote (){
   let randomQuote = getRandomQuote(quotes);
@@ -83,7 +82,7 @@ function printQuote (){
         }
     }  
 
-    html+= `</p>`
+    html+= `</p>`;
   
 document.body.style.backgroundColor = randomColor(); 
 document.getElementById("quote-box").innerHTML = `${html}`;       
